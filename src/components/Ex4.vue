@@ -26,7 +26,7 @@ function deleteItem(index) {
         </li>
     </ul>
 
-    <input v-model="newItem" type="text">
+    <input @keyup.enter="addItem" v-model="newItem" type="text">
     <button @click="addItem">Add!</button>
    
 </template>
